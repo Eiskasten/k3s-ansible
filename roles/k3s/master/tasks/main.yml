@@ -107,12 +107,12 @@
 
 - name: Create kubectl symlink
   file:
-    src: /usr/local/bin/k3s
+    src: {{ k3s_bin }}
     dest: /usr/local/bin/kubectl
     state: link
 
 - name: Create crictl symlink
   file:
-    src: /usr/local/bin/k3s
+    src: {{ k3s_bin }}
     dest: /usr/local/bin/crictl
     state: link

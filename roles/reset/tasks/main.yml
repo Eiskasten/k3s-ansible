@@ -36,7 +36,7 @@
     - /etc/rancher/k3s
     - /var/lib/kubelet
     - /var/lib/rancher/k3s
-    - /usr/local/bin/k3s
+    - {{ k3s_bin }}
 
 - name: daemon_reload
   systemd:
